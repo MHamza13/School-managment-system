@@ -38,8 +38,7 @@ app.use(express.static(distDir));
 // Database Connection
 mongoose
   .connect(
-    process.env.MONGO_URL ||
-      "mongodb+srv://iamhamza013:school321@schoolmanagementsystem.r9cedxq.mongodb.net/School-Management",
+    process.env.MONGO_URL ,
     {}
   )
   .then(() => {
