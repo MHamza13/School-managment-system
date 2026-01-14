@@ -10,7 +10,7 @@ const Routes = require("./routes/route.js");
 
 dotenv.config();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6000;
 
 // Uploads folder check
 const uploadDir = path.join(__dirname, 'uploads');
