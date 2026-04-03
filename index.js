@@ -38,7 +38,7 @@ app.use(express.static(distDir));
 // Database Connection
 mongoose
   .connect(
-    process.env.MONGO_URL ,
+    process.env.MONGO_URL,
     {}
   )
   .then(() => {

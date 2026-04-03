@@ -68,6 +68,7 @@ const {
   teacherAttendance,
   updateTeacher,
 } = require("../controllers/teacher-controller.js");
+const { saveTimetable, getTimetable, deleteTimetable } = require("../controllers/timetableController.js");
 
 // ==========================================
 // MULTER CONFIGURATION
@@ -183,5 +184,14 @@ router.get("/Subject/:id", getSubjectDetail);
 router.delete("/Subject/:id", deleteSubject);
 router.delete("/Subjects/:id", deleteSubjects);
 router.delete("/SubjectsClass/:id", deleteSubjectsByClass);
+
+// ==========================================
+// TIMETABLE ROUTES (New Added)
+// ==========================================
+
+router.post("/Timetable/save", saveTimetable); 
+router.put("/Timetable/update", saveTimetable);
+router.get("/Timetable/:id", getTimetable);
+router.delete("/Timetable/:id", deleteTimetable);
 
 module.exports = router;
