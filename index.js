@@ -45,7 +45,7 @@ mongoose
     console.log("✅ Connected to MongoDB");
   })
   .catch((err) => {
-    console.error("❌ NOT CONNECTED TO NETWORK", err);
+    console.error("❌ NOT CONNECTED TO MongoDB", err);
   });
 
 // Routes (API)
