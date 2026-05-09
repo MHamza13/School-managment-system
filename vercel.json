@@ -12,16 +12,16 @@
   ],
   "rewrites": [
     {
+      "source": "/uploads/(.*)",
+      "destination": "/uploads/$1"
+    },
+    {
       "source": "/api/(.*)",
       "destination": "index.js"
     },
     {
-      "source": "/assets/(.*)",
-      "destination": "/dist/assets/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/dist/index.html"
+      "source": "/((?!api|uploads).*)",
+      "destination": "index.js"
     }
   ]
 }
